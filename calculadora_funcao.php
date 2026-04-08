@@ -14,12 +14,17 @@ function multiplicar($num1,$num2){
 };
 
 function dividir($num1,$num2){
-	return $num1/$num2;
+	if ($num2!= 0) {
+		return $num1/$num2;
+	} else{
+		return "impossivel divisão por 0";
+	}
+	
 };
 
 $op = 4;
-$num1 = 10;
-$num2 = 5;
+$num1 = 0;
+$num2 = 10;
 
 switch ($op) {
 	case 1: somar($num1,$num2);
@@ -37,14 +42,9 @@ switch ($op) {
 		$resp = multiplicar($num1,$num2);
 		break;
 
-	case 4: if ($num1!= 0) {
-		dividir($num1,$num2);
+	case 4: dividir($num1,$num2);
 		$nomeOp = "divisão";
 		$resp = dividir($num1,$num2);
-	} else{
-		$nomeOp = "operação é invalida";
-		$resp = "impssivel divisão por 0";
-	}
 		break;
 	
 	default: echo("Sair");
