@@ -14,6 +14,9 @@ $resultado = array();
 		echo "$resultado[$i] <br>";
 	}
 
+	echo "====================<br>";
+
+	
 
 
 
