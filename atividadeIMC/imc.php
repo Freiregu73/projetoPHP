@@ -15,11 +15,11 @@
 		$classificacao = "Abaixo do peso!";
 	} else if($imc < 25){
 		$classificacao = "Peso ideal";
-	}else if($imc < 29){
+	}else if($imc < 30){
 		$classificacao = "Sobrepeso";
-	}else if($imc < 34){
+	}else if($imc < 35){
 		$classificacao = "Obesidade grau 1";
-	}else if($imc < 39){
+	}else if($imc < 40){
 		$classificacao = "Obesidade grau 2";
 	}else{
 		$classificacao = "Obesidade grau 3";
